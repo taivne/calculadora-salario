@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+  <head>
+    <meta charset="UTF-8">
+    <title>Calculadora de Salário Líquido</title>
+    <link rel="stylesheet" href="styles.css">
+    <script type="text/javascript" src="./index.js" defer=""></script>
+    <link rel="stylesheet" href="./index.css">
+  </head>
+
+  <body class="light-theme">
+    <div class="container">
+      <h1>Calculadora de Salário Líquido</h1>
+      <div>
+        <label for="valorHora">Valor por Hora (R$):</label>
+        <input type="number" id="valorHora" placeholder="Insira o valor por hora" aria-label="Valor por hora">
+      </div>
+      <div>
+        <label for="horasMes">Horas Trabalhadas no Mês:</label>
+        <input type="number" id="horasMes" placeholder="Insira as horas trabalhadas" aria-label="Horas trabalhadas no mês">
+      </div>
+      <button onclick="calcularSalario()">Calcular Salário</button>
+      <div class="results nota-fiscal" style="display: none;">
+        <p id="salarioBruto"></p>
+        <p id="descontoINSS"></p>
+        <p id="descontoSindicato"></p>
+        <p id="totalDescontos"></p>
+        <p id="salarioLiquido"></p>
+      </div>
+    </div>
+    <script src="script.js"></script>
+
+
+  </body>
+
+</html>
